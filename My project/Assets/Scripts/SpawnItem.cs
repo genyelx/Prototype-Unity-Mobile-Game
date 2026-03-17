@@ -4,8 +4,9 @@ using UnityEngine;
 public class SpawnItem : MonoBehaviour
 {
     [SerializeField] GameObject []prefabFood;
+    [SerializeField] Transform tranformSpawnItem;
 
-    Transform tranformSpawnItem;
+    private bool haveInstantiate;
 
     private void Awake()
     {
@@ -14,11 +15,11 @@ public class SpawnItem : MonoBehaviour
 
     void Start()
     {
-        Instantiate(prefabFood[Random.Range(0, 23)], new Vector3(0.5f, 1.5f, -8.5f), Quaternion.identity);
+      
     }
 
-    void Update()
+    void Instantiate()
     {
-        
+        Instantiate(prefabFood[Random.Range(0, 23)], new Vector3(tranformSpawnItem.position.x, tranformSpawnItem.position.y, tranformSpawnItem.position.z), Quaternion.identity);
     }
 }

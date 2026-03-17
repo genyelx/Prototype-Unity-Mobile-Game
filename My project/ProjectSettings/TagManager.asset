@@ -6,6 +6,10 @@ TagManager:
   tags:
   - CanEat
   - Can'tEat
+  - Table
+  - EatArea
+  - DiscartArea
+  - PlayerHealth
   layers:
   - Default
   - TransparentFX

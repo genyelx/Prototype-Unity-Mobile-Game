@@ -1,11 +1,12 @@
 using System.ComponentModel;
 using UnityEngine;
 
-public class TouchSystem : MonoBehaviour
+public class TouchPlayer : MonoBehaviour
 {
+    //Camera getItem
     private Camera cam;
     private GameObject holdItem;
-
+    private Rigidbody holdItemRB;
     private float distanceZ;
     private Vector3 offset;
 
@@ -15,6 +16,11 @@ public class TouchSystem : MonoBehaviour
     }
 
     void Update()
+    {
+        TouchScreen();
+    }
+
+    void TouchScreen()
     {
         if (Input.touchCount > 0)
         {
@@ -26,21 +32,31 @@ public class TouchSystem : MonoBehaviour
                     Ray ray = cam.ScreenPointToRay(touch.position);
                     RaycastHit hit;
 
-                    if(Physics.Raycast(ray, out hit))
+                    if (Physics.Raycast(ray, out hit))
                     {
-                        holdItem = hit.collider.gameObject;
+                        if (hit.collider.gameObject.tag == "CanEat" || hit.collider.gameObject.tag == "Can'tEat")
+                        {
+                            holdItem = hit.collider.gameObject;
 
-                        distanceZ = cam.WorldToScreenPoint(holdItem.transform.position).z;
+                            holdItemRB = holdItem.GetComponent<Rigidbody>();
+                            holdItemRB.useGravity = false;
 
-                        Vector3 positionTouchInWord = cam.ScreenToWorldPoint(new Vector3(touch.position.x, touch.position.y, distanceZ));
-                        offset = holdItem.transform.position - positionTouchInWord;
+                            distanceZ = cam.WorldToScreenPoint(holdItem.transform.position).z;
 
-                        print("Está segurando o item" + holdItem.name);
+                            Vector3 positionTouchInWord = cam.ScreenToWorldPoint(new Vector3(touch.position.x, touch.position.y, distanceZ));
+                            offset = holdItem.transform.position - positionTouchInWord;
+
+                            print("Está segurando o item" + holdItem.name);
+                        }
+                        else
+                        {
+                            print("Tá querendo comer a mesa também?");
+                        }
                     }
                     break;
 
                 case TouchPhase.Moved:
-                    if(holdItem != null)
+                    if (holdItem != null)
                     {
                         Vector3 positionTouchInWord = new Vector3(touch.position.x, touch.position.y, distanceZ);
                         holdItem.transform.position = cam.ScreenToWorldPoint(positionTouchInWord) + offset;
@@ -50,10 +66,11 @@ public class TouchSystem : MonoBehaviour
                     break;
                 case TouchPhase.Ended:
                 case TouchPhase.Canceled:
-                    if(holdItem != null)
+                    if (holdItem != null)
                     {
                         print("Soltou o item");
                         holdItem = null;
+                        holdItemRB.useGravity = true;
                     }
                     break;
             }
