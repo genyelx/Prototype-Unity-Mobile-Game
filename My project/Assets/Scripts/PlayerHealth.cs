@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    static public int health;
-    static public int points;
+    public int health;
+    public int points;
 
     void Start()
     {
