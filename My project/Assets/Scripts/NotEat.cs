@@ -2,12 +2,6 @@ using UnityEngine;
 
 public class NotEat : MonoBehaviour
 {
-    PlayerHealth playerhealth;
-    
-    private void Start()
-    {
-        playerhealth = GetComponent<PlayerHealth>();
-    }
     
     private void OnCollisionEnter(Collision collision)
     {
