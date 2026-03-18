@@ -4,7 +4,6 @@ public class NotEat : MonoBehaviour
 {
 
     PlayerHealth playerhealth;
-
     SpawnItem spawnItem;
 
     private void Start()
