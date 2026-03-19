@@ -6,12 +6,14 @@ public class NotEat : MonoBehaviour
     PlayerHealth playerhealth;
     SpawnItem spawnItem;
     ParticleInstantiate particleInstantiate;
+    AudioManager audioManager;
 
     private void Start()
     {
         playerhealth = FindAnyObjectByType<PlayerHealth>();
         spawnItem = FindAnyObjectByType<SpawnItem>();
         particleInstantiate = FindAnyObjectByType<ParticleInstantiate>();
+        audioManager = FindAnyObjectByType<AudioManager>();
     }
     
     private void OnCollisionEnter(Collision collision)
@@ -24,6 +26,7 @@ public class NotEat : MonoBehaviour
             playerhealth.UiUpdate();
             spawnItem.SpawnPrefab();
             particleInstantiate.SpawnParticle(new Vector3(-0.2f, 1.35f, transform.position.z), 1);
+            audioManager.BreakCombo();
         }
         else
         {
@@ -31,6 +34,7 @@ public class NotEat : MonoBehaviour
             playerhealth.points += 10;
             spawnItem.SpawnPrefab();
             particleInstantiate.SpawnParticle(new Vector3(-0.2f, 1.35f, transform.position.z), 1);
+            audioManager.IncreaseCombo();
         }
     }
 }

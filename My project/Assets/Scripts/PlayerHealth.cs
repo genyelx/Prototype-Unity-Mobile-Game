@@ -9,10 +9,12 @@ public class PlayerHealth : MonoBehaviour
     public int points;
 
     CameraShake cameraShake;
+    AudioManager audioManager;
 
     void Start()
     {
         cameraShake = FindAnyObjectByType<CameraShake>();
+        audioManager = FindAnyObjectByType<AudioManager>();
         health = 3;
         points = 0;
     }
