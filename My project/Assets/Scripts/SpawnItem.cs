@@ -18,10 +18,9 @@ public class SpawnItem : MonoBehaviour
         Instantiate(prefabFood[Random.Range(0, 23)], new Vector3(tranformSpawnItem.position.x, tranformSpawnItem.position.y, tranformSpawnItem.position.z), Quaternion.identity);
     }
 
-    public void Score()
+    public void SpawnPrefab()
     {
         print("Points: " + playerhealth.points);
-        print("Life: " + playerhealth.health);
 
         if(prefabFood != null)
         {
