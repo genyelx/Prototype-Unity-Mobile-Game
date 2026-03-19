@@ -9,7 +9,7 @@ TagManager:
   - Table
   - EatArea
   - DiscartArea
-  - PlayerHealth
+  - PlayerManager
   layers:
   - Default
   - TransparentFX

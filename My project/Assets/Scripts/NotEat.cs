@@ -21,7 +21,7 @@ public class NotEat : MonoBehaviour
             Destroy(collision.gameObject);
             playerhealth.health -= 1;
             playerhealth.points -= 10;
-            playerhealth.Damage();
+            playerhealth.UiUpdate();
             spawnItem.SpawnPrefab();
             particleInstantiate.SpawnParticle(new Vector3(-0.2f, 1.35f, transform.position.z), 1);
         }

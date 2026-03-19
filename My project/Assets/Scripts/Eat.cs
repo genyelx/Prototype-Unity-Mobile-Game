@@ -20,7 +20,7 @@ public class Eat : MonoBehaviour
             Destroy(collision.gameObject);
             playerhealth.health -= 1;
             playerhealth.points -= 10;
-            playerhealth.Damage();
+            playerhealth.UiUpdate();
             spawnItem.SpawnPrefab();
             particleIntantiate.SpawnParticle(new Vector3(1.2f, 1.35f, transform.position.z), 1);
         }
