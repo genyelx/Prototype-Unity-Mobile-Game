@@ -5,6 +5,7 @@ public class NotEat : MonoBehaviour
 
     PlayerHealth playerhealth;
     SpawnItem spawnItem;
+    [SerializeField] GameObject particleCannotEat;
 
     private void Start()
     {
@@ -20,12 +21,14 @@ public class NotEat : MonoBehaviour
             playerhealth.health -= 1;
             playerhealth.points -= 10;
             spawnItem.Score();
+            Instantiate(particleCannotEat, new Vector3(-0.2f, 1.35f, transform.position.z), Quaternion.identity);
         }
         else
         {
             Destroy(collision.gameObject);
             playerhealth.points += 10;
             spawnItem.Score();
+            Instantiate(particleCannotEat, new Vector3(-0.2f, 1.35f, transform.position.z), Quaternion.identity);
         }
     }
 }

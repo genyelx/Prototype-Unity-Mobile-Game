@@ -370,6 +370,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee4c2f7be8e851b4bb146fb65b8a77b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Eat
+  particleEat: {fileID: 6113887557353750727, guid: ee078371f421ef440876e52e3d36f484, type: 3}
+  particleCannotEat: {fileID: 376592600717369498, guid: d9f0529e9e9ef484c9b33a61507c5110, type: 3}
 --- !u!1001 &411182112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2611,6 +2613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ce1ff432c3b9544981f92144efeab01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NotEat
+  particleCannotEat: {fileID: 376592600717369498, guid: d9f0529e9e9ef484c9b33a61507c5110, type: 3}
 --- !u!1 &2108250101 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 08c24f1f6da58834caa0f4513892bfdb, type: 3}
