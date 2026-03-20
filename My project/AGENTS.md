@@ -2,7 +2,7 @@
 - Project name: My project
 - Unity version: Unity 6000.3.6f1
 - Active game object:
-  - Name: AudioManager
-  - Tag: Untagged
+  - Name: DiscartArea
+  - Tag: DiscartArea
   - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
