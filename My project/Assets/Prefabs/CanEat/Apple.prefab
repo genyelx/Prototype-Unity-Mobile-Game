@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &7108151458330686557
+--- !u!1001 &389718457458030736
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8,77 +8,77 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 9c628533b05661843bb2d95632023a90, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 68bca97be32c85a458d81dd222346620, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.50271
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9c628533b05661843bb2d95632023a90, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 68bca97be32c85a458d81dd222346620, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.04849
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9c628533b05661843bb2d95632023a90, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 68bca97be32c85a458d81dd222346620, type: 3}
       propertyPath: m_LocalPosition.z
       value: 6.90586
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9c628533b05661843bb2d95632023a90, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 68bca97be32c85a458d81dd222346620, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9c628533b05661843bb2d95632023a90, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 68bca97be32c85a458d81dd222346620, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9c628533b05661843bb2d95632023a90, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 68bca97be32c85a458d81dd222346620, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9c628533b05661843bb2d95632023a90, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 68bca97be32c85a458d81dd222346620, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9c628533b05661843bb2d95632023a90, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 68bca97be32c85a458d81dd222346620, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9c628533b05661843bb2d95632023a90, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 68bca97be32c85a458d81dd222346620, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9c628533b05661843bb2d95632023a90, type: 3}
+    - target: {fileID: -8679921383154817045, guid: 68bca97be32c85a458d81dd222346620, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 9c628533b05661843bb2d95632023a90, type: 3}
+    - target: {fileID: 919132149155446097, guid: 68bca97be32c85a458d81dd222346620, type: 3}
       propertyPath: m_Name
-      value: Candle Holder 1
+      value: Apple
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 9c628533b05661843bb2d95632023a90, type: 3}
+    - target: {fileID: 919132149155446097, guid: 68bca97be32c85a458d81dd222346620, type: 3}
       propertyPath: m_TagString
-      value: Can'tEat
+      value: CanEat
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9c628533b05661843bb2d95632023a90, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 68bca97be32c85a458d81dd222346620, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2755340647929394596}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9c628533b05661843bb2d95632023a90, type: 3}
+      addedObject: {fileID: 2062904176025435366}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 68bca97be32c85a458d81dd222346620, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -966354581078921876}
-  m_SourcePrefab: {fileID: 100100000, guid: 9c628533b05661843bb2d95632023a90, type: 3}
---- !u!1 &7954574955460725004 stripped
+      addedObject: {fileID: -7926281243765439577}
+  m_SourcePrefab: {fileID: 100100000, guid: 68bca97be32c85a458d81dd222346620, type: 3}
+--- !u!1 &696341667661202881 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9c628533b05661843bb2d95632023a90, type: 3}
-  m_PrefabInstance: {fileID: 7108151458330686557}
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 68bca97be32c85a458d81dd222346620, type: 3}
+  m_PrefabInstance: {fileID: 389718457458030736}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &2755340647929394596
+--- !u!65 &2062904176025435366
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7954574955460725004}
+  m_GameObject: {fileID: 696341667661202881}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -91,15 +91,15 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.5726361, y: 0.41738963, z: 0.5726366}
-  m_Center: {x: -0.00000023841858, y: 0.20869505, z: -0.0000023841858}
---- !u!54 &-966354581078921876
+  m_Size: {x: 0.1413467, y: 0.15669912, z: 0.103927135}
+  m_Center: {x: -0.00000035762787, y: 0.07834962, z: 0}
+--- !u!54 &-7926281243765439577
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7954574955460725004}
+  m_GameObject: {fileID: 696341667661202881}
   serializedVersion: 5
   m_Mass: 0.5
   m_LinearDamping: 0

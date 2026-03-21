@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &767397191189529731
+--- !u!1001 &6643053537713783179
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8,77 +8,77 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: c257a80987b9c6d41890e32cb3a37918, type: 3}
+    - target: {fileID: -8679921383154817045, guid: ddae11e6c2d1aad439b6c0072efdf6c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.50271
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c257a80987b9c6d41890e32cb3a37918, type: 3}
+    - target: {fileID: -8679921383154817045, guid: ddae11e6c2d1aad439b6c0072efdf6c1, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.04849
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c257a80987b9c6d41890e32cb3a37918, type: 3}
+    - target: {fileID: -8679921383154817045, guid: ddae11e6c2d1aad439b6c0072efdf6c1, type: 3}
       propertyPath: m_LocalPosition.z
       value: 6.90586
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c257a80987b9c6d41890e32cb3a37918, type: 3}
+    - target: {fileID: -8679921383154817045, guid: ddae11e6c2d1aad439b6c0072efdf6c1, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c257a80987b9c6d41890e32cb3a37918, type: 3}
+    - target: {fileID: -8679921383154817045, guid: ddae11e6c2d1aad439b6c0072efdf6c1, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c257a80987b9c6d41890e32cb3a37918, type: 3}
+    - target: {fileID: -8679921383154817045, guid: ddae11e6c2d1aad439b6c0072efdf6c1, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c257a80987b9c6d41890e32cb3a37918, type: 3}
+    - target: {fileID: -8679921383154817045, guid: ddae11e6c2d1aad439b6c0072efdf6c1, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c257a80987b9c6d41890e32cb3a37918, type: 3}
+    - target: {fileID: -8679921383154817045, guid: ddae11e6c2d1aad439b6c0072efdf6c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c257a80987b9c6d41890e32cb3a37918, type: 3}
+    - target: {fileID: -8679921383154817045, guid: ddae11e6c2d1aad439b6c0072efdf6c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c257a80987b9c6d41890e32cb3a37918, type: 3}
+    - target: {fileID: -8679921383154817045, guid: ddae11e6c2d1aad439b6c0072efdf6c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: c257a80987b9c6d41890e32cb3a37918, type: 3}
+    - target: {fileID: 919132149155446097, guid: ddae11e6c2d1aad439b6c0072efdf6c1, type: 3}
       propertyPath: m_Name
-      value: Cocoa
+      value: Lamp
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: c257a80987b9c6d41890e32cb3a37918, type: 3}
+    - target: {fileID: 919132149155446097, guid: ddae11e6c2d1aad439b6c0072efdf6c1, type: 3}
       propertyPath: m_TagString
-      value: CanEat
+      value: Can'tEat
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c257a80987b9c6d41890e32cb3a37918, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ddae11e6c2d1aad439b6c0072efdf6c1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 529231307173458406}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c257a80987b9c6d41890e32cb3a37918, type: 3}
+      addedObject: {fileID: -6707084770373511194}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ddae11e6c2d1aad439b6c0072efdf6c1, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6642230729704482297}
-  m_SourcePrefab: {fileID: 100100000, guid: c257a80987b9c6d41890e32cb3a37918, type: 3}
---- !u!1 &461406189435042258 stripped
+      addedObject: {fileID: -7430629757644578642}
+  m_SourcePrefab: {fileID: 100100000, guid: ddae11e6c2d1aad439b6c0072efdf6c1, type: 3}
+--- !u!1 &5832641105964317914 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c257a80987b9c6d41890e32cb3a37918, type: 3}
-  m_PrefabInstance: {fileID: 767397191189529731}
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ddae11e6c2d1aad439b6c0072efdf6c1, type: 3}
+  m_PrefabInstance: {fileID: 6643053537713783179}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &529231307173458406
+--- !u!65 &-6707084770373511194
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 461406189435042258}
+  m_GameObject: {fileID: 5832641105964317914}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -91,15 +91,15 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.22181773, y: 0.12002039, z: 0.05500269}
-  m_Center: {x: 0, y: 0.060010195, z: 0}
---- !u!54 &6642230729704482297
+  m_Size: {x: 0.29525948, y: 0.44381547, z: 0.29981232}
+  m_Center: {x: 0, y: 0.22190773, z: 0}
+--- !u!54 &-7430629757644578642
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 461406189435042258}
+  m_GameObject: {fileID: 5832641105964317914}
   serializedVersion: 5
   m_Mass: 0.5
   m_LinearDamping: 0

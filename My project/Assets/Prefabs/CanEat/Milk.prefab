@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &7700464196082761693
+--- !u!1001 &4602497377208858173
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8,51 +8,51 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: b7965b24164e4a44a9ceb697ffbb3535, type: 3}
+    - target: {fileID: -8679921383154817045, guid: b294b8252d32d2a43836560fa587f2f6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.50271
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b7965b24164e4a44a9ceb697ffbb3535, type: 3}
+    - target: {fileID: -8679921383154817045, guid: b294b8252d32d2a43836560fa587f2f6, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.04849
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b7965b24164e4a44a9ceb697ffbb3535, type: 3}
+    - target: {fileID: -8679921383154817045, guid: b294b8252d32d2a43836560fa587f2f6, type: 3}
       propertyPath: m_LocalPosition.z
       value: 6.90586
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b7965b24164e4a44a9ceb697ffbb3535, type: 3}
+    - target: {fileID: -8679921383154817045, guid: b294b8252d32d2a43836560fa587f2f6, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b7965b24164e4a44a9ceb697ffbb3535, type: 3}
+    - target: {fileID: -8679921383154817045, guid: b294b8252d32d2a43836560fa587f2f6, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b7965b24164e4a44a9ceb697ffbb3535, type: 3}
+    - target: {fileID: -8679921383154817045, guid: b294b8252d32d2a43836560fa587f2f6, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b7965b24164e4a44a9ceb697ffbb3535, type: 3}
+    - target: {fileID: -8679921383154817045, guid: b294b8252d32d2a43836560fa587f2f6, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b7965b24164e4a44a9ceb697ffbb3535, type: 3}
+    - target: {fileID: -8679921383154817045, guid: b294b8252d32d2a43836560fa587f2f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b7965b24164e4a44a9ceb697ffbb3535, type: 3}
+    - target: {fileID: -8679921383154817045, guid: b294b8252d32d2a43836560fa587f2f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b7965b24164e4a44a9ceb697ffbb3535, type: 3}
+    - target: {fileID: -8679921383154817045, guid: b294b8252d32d2a43836560fa587f2f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: b7965b24164e4a44a9ceb697ffbb3535, type: 3}
+    - target: {fileID: 919132149155446097, guid: b294b8252d32d2a43836560fa587f2f6, type: 3}
       propertyPath: m_Name
-      value: Red Soda in Glass Bottle
+      value: Milk
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: b7965b24164e4a44a9ceb697ffbb3535, type: 3}
+    - target: {fileID: 919132149155446097, guid: b294b8252d32d2a43836560fa587f2f6, type: 3}
       propertyPath: m_TagString
       value: CanEat
       objectReference: {fileID: 0}
@@ -60,25 +60,25 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b7965b24164e4a44a9ceb697ffbb3535, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b294b8252d32d2a43836560fa587f2f6, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -8302970381492247594}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b7965b24164e4a44a9ceb697ffbb3535, type: 3}
+      addedObject: {fileID: 3213745083629386258}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b294b8252d32d2a43836560fa587f2f6, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -2773834056025330262}
-  m_SourcePrefab: {fileID: 100100000, guid: b7965b24164e4a44a9ceb697ffbb3535, type: 3}
---- !u!1 &7358005148858008204 stripped
+      addedObject: {fileID: 239618236574199663}
+  m_SourcePrefab: {fileID: 100100000, guid: b294b8252d32d2a43836560fa587f2f6, type: 3}
+--- !u!1 &3683437805620317036 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b7965b24164e4a44a9ceb697ffbb3535, type: 3}
-  m_PrefabInstance: {fileID: 7700464196082761693}
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b294b8252d32d2a43836560fa587f2f6, type: 3}
+  m_PrefabInstance: {fileID: 4602497377208858173}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &-8302970381492247594
+--- !u!65 &3213745083629386258
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7358005148858008204}
+  m_GameObject: {fileID: 3683437805620317036}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -91,15 +91,15 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.050040245, y: 0.17824173, z: 0.048119545}
-  m_Center: {x: 0, y: 0.089120865, z: 0}
---- !u!54 &-2773834056025330262
+  m_Size: {x: 0.15929365, y: 0.38369048, z: 0.15929365}
+  m_Center: {x: 0, y: 0.19184524, z: 0}
+--- !u!54 &239618236574199663
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7358005148858008204}
+  m_GameObject: {fileID: 3683437805620317036}
   serializedVersion: 5
   m_Mass: 0.5
   m_LinearDamping: 0
