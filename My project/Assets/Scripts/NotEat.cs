@@ -22,6 +22,7 @@ public class NotEat : MonoBehaviour
             playerhealth.points -= 10;
             playerhealth.UiUpdatePoints();
             playerhealth.UiUpdateLife();
+            playerhealth.sourceEffects.PlayOneShot(playerhealth.audioClips[9]);
             spawnItem.SpawnPrefab();
             particleInstantiate.SpawnParticle(new Vector3(-0.2f, 1.35f, transform.position.z), 1);
         }
@@ -31,6 +32,7 @@ public class NotEat : MonoBehaviour
             playerhealth.points += 10;
             spawnItem.SpawnPrefab();
             playerhealth.InscreasePoints();
+            playerhealth.sourceEffects.PlayOneShot(playerhealth.audioClips[9]);
             particleInstantiate.SpawnParticle(new Vector3(-0.2f, 1.35f, transform.position.z), 1);
         }
     }

@@ -14,11 +14,11 @@ public class CanvaManager : MonoBehaviour
     [SerializeField] Slider sliderSound;
 
     //reference Scripts
-    AudioManager audioManager;
+    PlayerHealth playerHealth;
 
     private void Awake()
     {
-        audioManager = FindAnyObjectByType<AudioManager>();
+        playerHealth = FindAnyObjectByType<PlayerHealth>();
     }
 
     private void Start()

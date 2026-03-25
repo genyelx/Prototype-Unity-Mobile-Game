@@ -20,7 +20,7 @@ public class SpawnItem : MonoBehaviour
 
     public void SpawnPrefab()
     {
-        print("Points: " + playerhealth.points);
+        playerhealth.sourceEffects.PlayOneShot(playerhealth.audioClips[10]);
 
         if(prefabFood != null)
         {

@@ -3,13 +3,21 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
+    //Ui var
     [SerializeField] GameObject[] Hearts;
     [SerializeField] Text textPoints;
     [SerializeField] Text textMultiply;
+
+    //Game Var
     public int health;
     public int points;
     int multiplyPoints = 1;
 
+    //sfx var
+    [SerializeField] public AudioSource sourceEffects;
+    [SerializeField] public AudioClip[] audioClips;
+
+    //reference a script
     CameraShake cameraShake;
     AudioManager audioManager;
 
@@ -36,12 +44,18 @@ public class PlayerHealth : MonoBehaviour
         {
             audioManager.IncreaseCombo();
         }
+
+        if(sourceEffects != null && audioClips != null)
+        {
+            sourceEffects.PlayOneShot(audioClips[1]);
+        }
     }
 
     public void ResetMultiply()
     {
         multiplyPoints = 1;
         UiUpdatePoints();
+        sourceEffects.PlayOneShot(audioClips[8]);
     }
 
     public void UiUpdatePoints()

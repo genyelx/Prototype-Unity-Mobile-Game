@@ -21,6 +21,7 @@ public class Eat : MonoBehaviour
             playerhealth.points -= 10;
             playerhealth.UiUpdatePoints();
             playerhealth.UiUpdateLife();
+            playerhealth.sourceEffects.PlayOneShot(playerhealth.audioClips[6]);
             spawnItem.SpawnPrefab();
             particleIntantiate.SpawnParticle(new Vector3(1.2f, 1.35f, transform.position.z), 1);
         }
@@ -29,6 +30,7 @@ public class Eat : MonoBehaviour
             Destroy(collision.gameObject);
             playerhealth.points += 10 ;
             playerhealth.InscreasePoints();
+            playerhealth.sourceEffects.PlayOneShot(playerhealth.audioClips[7]);
             spawnItem.SpawnPrefab();
             particleIntantiate.SpawnParticle(new Vector3(1.2f, 1.35f, transform.position.z), 0);
         }
