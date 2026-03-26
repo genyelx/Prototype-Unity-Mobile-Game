@@ -8,13 +8,13 @@ public class AudioManager : MonoBehaviour
     float speedMax = 1.5f;
     float speedNormal = 1.0f;
 
-    PlayerHealth playerHealth;
+    PlayerManager playerManager;
 
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        playerHealth = FindAnyObjectByType<PlayerHealth>();
+        playerManager = FindAnyObjectByType<PlayerManager>();
         audioSource.pitch = speedNormal;
     }
 
@@ -23,22 +23,21 @@ public class AudioManager : MonoBehaviour
         comboActual++;
         float newVelocity = speedNormal + (comboActual * increaseToPoints);
         audioSource.pitch = Mathf.Min(newVelocity, speedMax);
-        print("Combo: " + comboActual + "| Speed: " + audioSource.pitch);
         if (comboActual <= 5)
         {
-            playerHealth.sourceEffects.PlayOneShot(playerHealth.audioClips[2]);
+            playerManager.sourceEffects.PlayOneShot(playerManager.audioClips[2]);
         }
         else if (comboActual <= 10)
         {
-            playerHealth.sourceEffects.PlayOneShot(playerHealth.audioClips[3]);
+            playerManager.sourceEffects.PlayOneShot(playerManager.audioClips[3]);
         }
         else if(comboActual <= 15)
         {
-            playerHealth.sourceEffects.PlayOneShot(playerHealth.audioClips[4]);
+            playerManager.sourceEffects.PlayOneShot(playerManager.audioClips[4]);
         }
         else
         {
-            playerHealth.sourceEffects.PlayOneShot(playerHealth.audioClips[5]);
+            playerManager.sourceEffects.PlayOneShot(playerManager.audioClips[5]);
         }
     }
 
@@ -46,6 +45,5 @@ public class AudioManager : MonoBehaviour
     {
         comboActual = 0;
         audioSource.pitch = speedNormal;
-        print("Break Combo!");
     }
 }

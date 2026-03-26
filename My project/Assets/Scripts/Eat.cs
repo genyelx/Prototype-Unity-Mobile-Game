@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class Eat : MonoBehaviour
 {
-    PlayerHealth playerhealth;
+    PlayerManager playerManager;
     SpawnItem spawnItem;
     ParticleInstantiate particleIntantiate;
 
     private void Start()
     {
-        playerhealth = FindAnyObjectByType<PlayerHealth>();
+        playerManager = FindAnyObjectByType<PlayerManager>();
         spawnItem = FindAnyObjectByType<SpawnItem>();
         particleIntantiate = FindAnyObjectByType<ParticleInstantiate>();
     }
@@ -18,19 +18,19 @@ public class Eat : MonoBehaviour
         if(collision.gameObject.CompareTag("Can'tEat"))
         {
             Destroy(collision.gameObject);
-            playerhealth.points -= 10;
-            playerhealth.UiUpdatePoints();
-            playerhealth.UiUpdateLife();
-            playerhealth.sourceEffects.PlayOneShot(playerhealth.audioClips[6]);
+            playerManager.points -= 10;
+            playerManager.UiUpdatePoints();
+            playerManager.UiUpdateLife();
+            playerManager.sourceEffects.PlayOneShot(playerManager.audioClips[6]);
             spawnItem.SpawnPrefab();
             particleIntantiate.SpawnParticle(new Vector3(1.2f, 1.35f, transform.position.z), 1);
         }
         else
         {
             Destroy(collision.gameObject);
-            playerhealth.points += 10 ;
-            playerhealth.InscreasePoints();
-            playerhealth.sourceEffects.PlayOneShot(playerhealth.audioClips[7]);
+            playerManager.points += 10 ;
+            playerManager.InscreasePoints();
+            playerManager.sourceEffects.PlayOneShot(playerManager.audioClips[7]);
             spawnItem.SpawnPrefab();
             particleIntantiate.SpawnParticle(new Vector3(1.2f, 1.35f, transform.position.z), 0);
         }

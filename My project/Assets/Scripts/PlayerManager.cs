@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PlayerHealth : MonoBehaviour
+public class PlayerManager : MonoBehaviour
 {
     //Ui var
     [SerializeField] GameObject[] Hearts;
@@ -21,11 +21,13 @@ public class PlayerHealth : MonoBehaviour
     //reference a script
     CameraShake cameraShake;
     AudioManager audioManager;
+    SpawnItem spawnItem;
 
     void Start()
     {
         cameraShake = FindAnyObjectByType<CameraShake>();
         audioManager = FindAnyObjectByType<AudioManager>();
+        spawnItem = FindAnyObjectByType<SpawnItem>();
         health = 3;
         points = 0;
         textMultiply.gameObject.SetActive(false);
@@ -35,11 +37,11 @@ public class PlayerHealth : MonoBehaviour
         if(health <= 0)
         {
             sourceEffects.PlayOneShot(audioClips[11]);
-            Invoke("loadDiedScene", 5.0f);
+            Invoke("LoadDiedScene", 5.0f);
         }
     }
 
-    public void loadDiedScene()
+    public void LoadDiedScene()
     {
         SceneManager.LoadScene(2);
     }

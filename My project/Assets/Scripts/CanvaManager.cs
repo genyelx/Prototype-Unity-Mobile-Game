@@ -14,11 +14,11 @@ public class CanvaManager : MonoBehaviour
     [SerializeField] Slider sliderSound;
 
     //reference Scripts
-    PlayerHealth playerHealth;
+    PlayerManager playerManager;
 
     private void Awake()
     {
-        playerHealth = FindAnyObjectByType<PlayerHealth>();
+        playerManager = FindAnyObjectByType<PlayerManager>();
     }
 
     private void Start()
@@ -32,18 +32,18 @@ public class CanvaManager : MonoBehaviour
     void OpenSettings()
     {
         panelSettings.SetActive(true);
-        playerHealth.sourceEffects.PlayOneShot(playerHealth.audioClips[12]);
+        playerManager.sourceEffects.PlayOneShot(playerManager.audioClips[12]);
     }
 
     void CloseSettings()
     {
         panelSettings.SetActive(false);
-        playerHealth.sourceEffects.PlayOneShot(playerHealth.audioClips[12]);
+        playerManager.sourceEffects.PlayOneShot(playerManager.audioClips[12]);
     }
 
     void ExitGame()
     {
-        playerHealth.sourceEffects.PlayOneShot(playerHealth.audioClips[12]);
+        playerManager.sourceEffects.PlayOneShot(playerManager.audioClips[12]);
         SceneManager.LoadScene(0);
     }
 }

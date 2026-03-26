@@ -3,13 +3,13 @@ using UnityEngine;
 public class NotEat : MonoBehaviour
 {
 
-    PlayerHealth playerhealth;
+    PlayerManager playerManager;
     SpawnItem spawnItem;
     ParticleInstantiate particleInstantiate;
 
     private void Start()
     {
-        playerhealth = FindAnyObjectByType<PlayerHealth>();
+        playerManager = FindAnyObjectByType<PlayerManager>();
         spawnItem = FindAnyObjectByType<SpawnItem>();
         particleInstantiate = FindAnyObjectByType<ParticleInstantiate>();
     }
@@ -19,20 +19,20 @@ public class NotEat : MonoBehaviour
         if (collision.gameObject.CompareTag("CanEat"))
         {
             Destroy(collision.gameObject);
-            playerhealth.points -= 10;
-            playerhealth.UiUpdatePoints();
-            playerhealth.UiUpdateLife();
-            playerhealth.sourceEffects.PlayOneShot(playerhealth.audioClips[9]);
+            playerManager.points -= 10;
+            playerManager.UiUpdatePoints();
+            playerManager.UiUpdateLife();
+            playerManager.sourceEffects.PlayOneShot(playerManager.audioClips[9]);
             spawnItem.SpawnPrefab();
             particleInstantiate.SpawnParticle(new Vector3(-0.2f, 1.35f, transform.position.z), 1);
         }
         else
         {
             Destroy(collision.gameObject);
-            playerhealth.points += 10;
+            playerManager.points += 10;
             spawnItem.SpawnPrefab();
-            playerhealth.InscreasePoints();
-            playerhealth.sourceEffects.PlayOneShot(playerhealth.audioClips[9]);
+            playerManager.InscreasePoints();
+            playerManager.sourceEffects.PlayOneShot(playerManager.audioClips[9]);
             particleInstantiate.SpawnParticle(new Vector3(-0.2f, 1.35f, transform.position.z), 1);
         }
     }

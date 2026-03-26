@@ -1,32 +1,40 @@
 using NUnit.Framework.Constraints;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpawnItem : MonoBehaviour
 {
     [SerializeField] GameObject []prefabFood;
     [SerializeField] Transform tranformSpawnItem;
-    PlayerHealth playerhealth;
+    [SerializeField] Text textNameItem;
+    PlayerManager playerManager;
+    
 
     private void Awake()
     {
         tranformSpawnItem = GetComponent<Transform>();
-        playerhealth = FindAnyObjectByType<PlayerHealth>();
+        playerManager = FindAnyObjectByType<PlayerManager>();
     }
 
     private void Start()
     {
         Instantiate(prefabFood[Random.Range(0, 23)], new Vector3(tranformSpawnItem.position.x, tranformSpawnItem.position.y, tranformSpawnItem.position.z), Quaternion.identity);
+        textNameItem.text = "Where yo'll put the item?";
     }
 
     public void SpawnPrefab()
     {
-        playerhealth.sourceEffects.PlayOneShot(playerhealth.audioClips[10]);
+        playerManager.sourceEffects.PlayOneShot(playerManager.audioClips[10]);
+        GameObject newItem;
 
         if(prefabFood != null)
         {
             if(tranformSpawnItem != null)
             {
-                Instantiate(prefabFood[Random.Range(0, 23)], new Vector3(tranformSpawnItem.position.x, tranformSpawnItem.position.y, tranformSpawnItem.position.z), Quaternion.identity);
+                newItem = Instantiate(prefabFood[Random.Range(0, 23)], new Vector3(tranformSpawnItem.position.x, tranformSpawnItem.position.y, tranformSpawnItem.position.z), Quaternion.identity);
+                string cleanName = newItem.name.Replace("(Clone)", "").TrimEnd();
+                textNameItem.text = cleanName;
+                textNameItem.gameObject.SetActive(true);
             }
             else
             {
