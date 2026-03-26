@@ -32,15 +32,18 @@ public class CanvaManager : MonoBehaviour
     void OpenSettings()
     {
         panelSettings.SetActive(true);
+        playerHealth.sourceEffects.PlayOneShot(playerHealth.audioClips[12]);
     }
 
     void CloseSettings()
     {
         panelSettings.SetActive(false);
+        playerHealth.sourceEffects.PlayOneShot(playerHealth.audioClips[12]);
     }
 
     void ExitGame()
     {
+        playerHealth.sourceEffects.PlayOneShot(playerHealth.audioClips[12]);
         SceneManager.LoadScene(0);
     }
 }

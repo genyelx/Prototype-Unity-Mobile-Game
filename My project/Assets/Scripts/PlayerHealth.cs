@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
@@ -28,6 +29,19 @@ public class PlayerHealth : MonoBehaviour
         health = 3;
         points = 0;
         textMultiply.gameObject.SetActive(false);
+    }
+    private void Update()
+    {
+        if(health <= 0)
+        {
+            sourceEffects.PlayOneShot(audioClips[11]);
+            Invoke("loadDiedScene", 5.0f);
+        }
+    }
+
+    public void loadDiedScene()
+    {
+        SceneManager.LoadScene(2);
     }
 
     public void InscreasePoints()
@@ -70,6 +84,7 @@ public class PlayerHealth : MonoBehaviour
             if (multiplyPoints > 1)
             {
                 textMultiply.text = "x" + multiplyPoints.ToString();
+                textMultiply.color = Color.green;
                 textMultiply.gameObject.SetActive(true);
             }
             else
