@@ -2,7 +2,7 @@
 - Project name: My project
 - Unity version: Unity 6000.3.6f1
 - Active game object:
-  - Name: EatArea
-  - Tag: EatArea
-  - Layer: Default
+  - Name: Canvas
+  - Tag: Untagged
+  - Layer: UI
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
